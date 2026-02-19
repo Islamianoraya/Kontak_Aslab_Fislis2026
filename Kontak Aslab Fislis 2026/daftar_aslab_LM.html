@@ -1,0 +1,759 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Daftar Aslab</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-6">
+
+    <!-- Search Bar -->
+<div class="mt-4">
+    <input id="searchInput" type="text" placeholder="Cari Asisten..." 
+        class="w-full px-4 py-2 rounded border focus:outline-none focus:ring-2 focus:ring-green-400" 
+        oninput="filterAslab()" />
+</div>
+
+<!-- Daftar Aslab -->
+<div id="aslabList" class="mt-4 space-y-4">
+
+    <!-- Nama dan Kontak Aslab -->
+    <div class="aslab-card bg-white shadow-md rounded-xl p-4 mb-4 flex justify-between items-center">
+        <div>
+            <div class="font-bold nama">Raya Islami Putra Atmaja (Koor)</div>
+            <div class="text-sm text-gray-600 nomor">6285175383590</div>
+        </div>
+        <a href="https://wa.me/6285175383590" target="_blank" class="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600">
+            Chat
+        </a>
+    </div>
+
+    <div class="aslab-card bg-white shadow-md rounded-xl p-4 mb-4 flex justify-between items-center">
+        <div>
+            <div class="font-bold nama">Michael Putra Nababan (Koor)</div>
+            <div class="text-sm text-gray-600 nomor">6285882676920</div>
+        </div>
+        <a href="https://wa.me/6285882676920" target="_blank" class="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600">
+            Chat
+        </a>
+    </div>
+
+    <div class="aslab-card bg-white shadow-md rounded-xl p-4 mb-4 flex justify-between items-center">
+        <div>
+            <div class="font-bold nama">Eksilistya Kartika R (Koor)</div>
+            <div class="text-sm text-gray-600 nomor">6281252551116</div>
+        </div>
+        <a href="https://wa.me/081252551116" target="_blank" class="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600">
+            Chat
+        </a>
+    </div>
+
+<div class="aslab-card bg-white shadow-md rounded-xl p-4 mb-4 flex justify-between items-center">
+        <div>
+            <div class="font-bold nama">Miftakhul Mu’arofah (Koor)</div>
+            <div class="text-sm text-gray-600 nomor">6285546910090</div>
+        </div>
+        <a href="https://wa.me/085546910090" target="_blank" class="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600">
+            Chat
+        </a>
+    </div>
+
+
+<div class="aslab-card bg-white shadow-md rounded-xl p-4 mb-4 flex justify-between items-center">
+    <div>
+        <div class="font-bold nama">David Akbar Ramadhan</div>
+        <div class="text-sm text-gray-600 nomor">6285156722740</div>
+    </div>
+    <a href="https://wa.me/6285156722740" target="_blank" class="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600">
+        Chat
+    </a>
+</div>
+
+<div class="aslab-card bg-white shadow-md rounded-xl p-4 mb-4 flex justify-between items-center">
+    <div>
+        <div class="font-bold nama">Naura Hanifah Nabiha</div>
+        <div class="text-sm text-gray-600 nomor">62881024391674</div>
+    </div>
+    <a href="https://wa.me/62881024391674" target="_blank" class="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600">
+        Chat
+    </a>
+</div>
+
+<div class="aslab-card bg-white shadow-md rounded-xl p-4 mb-4 flex justify-between items-center">
+    <div>
+        <div class="font-bold nama">M. ROGHIB SOFA MUJTABA</div>
+        <div class="text-sm text-gray-600 nomor">6285274962939</div>
+    </div>
+    <a href="https://wa.me/6285274962939" target="_blank" class="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600">
+        Chat
+    </a>
+</div>
+
+<div class="aslab-card bg-white shadow-md rounded-xl p-4 mb-4 flex justify-between items-center">
+    <div>
+        <div class="font-bold nama">Firman Maulana</div>
+        <div class="text-sm text-gray-600 nomor">6281231877206</div>
+    </div>
+    <a href="https://wa.me/6281231877206" target="_blank" class="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600">
+        Chat
+    </a>
+</div>
+
+<div class="aslab-card bg-white shadow-md rounded-xl p-4 mb-4 flex justify-between items-center">
+    <div>
+        <div class="font-bold nama">Juan Christian Liston Marbun</div>
+        <div class="text-sm text-gray-600 nomor">6285692894849</div>
+    </div>
+    <a href="https://wa.me/6285692894849" target="_blank" class="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600">
+        Chat
+    </a>
+</div>
+
+<div class="aslab-card bg-white shadow-md rounded-xl p-4 mb-4 flex justify-between items-center">
+    <div>
+        <div class="font-bold nama">Rizal Romadhoni</div>
+        <div class="text-sm text-gray-600 nomor">6285727948380</div>
+    </div>
+    <a href="https://wa.me/6285727948380" target="_blank" class="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600">
+        Chat
+    </a>
+</div>
+
+<div class="aslab-card bg-white shadow-md rounded-xl p-4 mb-4 flex justify-between items-center">
+    <div>
+        <div class="font-bold nama">Muhammad Alvin Rasyad Ramadhani</div>
+        <div class="text-sm text-gray-600 nomor">6282142162108</div>
+    </div>
+    <a href="https://wa.me/6282142162108" target="_blank" class="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600">
+        Chat
+    </a>
+</div>
+
+<div class="aslab-card bg-white shadow-md rounded-xl p-4 mb-4 flex justify-between items-center">
+    <div>
+        <div class="font-bold nama">Laily Cahya Febriantina</div>
+        <div class="text-sm text-gray-600 nomor">6282145971037</div>
+    </div>
+    <a href="https://wa.me/6282145971037" target="_blank" class="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600">
+        Chat
+    </a>
+</div>
+
+<div class="aslab-card bg-white shadow-md rounded-xl p-4 mb-4 flex justify-between items-center">
+    <div>
+        <div class="font-bold nama">Nabila Riang Febrian</div>
+        <div class="text-sm text-gray-600 nomor">6281339880079</div>
+    </div>
+    <a href="https://wa.me/6281339880079" target="_blank" class="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600">
+        Chat
+    </a>
+</div>
+
+<div class="aslab-card bg-white shadow-md rounded-xl p-4 mb-4 flex justify-between items-center">
+    <div>
+        <div class="font-bold nama">Okta Dewa Arjun</div>
+        <div class="text-sm text-gray-600 nomor">6281232584531</div>
+    </div>
+    <a href="https://wa.me/6281232584531" target="_blank" class="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600">
+        Chat
+    </a>
+</div>
+
+<div class="aslab-card bg-white shadow-md rounded-xl p-4 mb-4 flex justify-between items-center">
+    <div>
+        <div class="font-bold nama">Siti Mustiana</div>
+        <div class="text-sm text-gray-600 nomor">62895396015575</div>
+    </div>
+    <a href="https://wa.me/62895396015575" target="_blank" class="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600">
+        Chat
+    </a>
+</div>
+
+<div class="aslab-card bg-white shadow-md rounded-xl p-4 mb-4 flex justify-between items-center">
+    <div>
+        <div class="font-bold nama">Maulidina Rahma Azaria</div>
+        <div class="text-sm text-gray-600 nomor">6285733801322</div>
+    </div>
+    <a href="https://wa.me/6285733801322" target="_blank" class="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600">
+        Chat
+    </a>
+</div>
+
+<div class="aslab-card bg-white shadow-md rounded-xl p-4 mb-4 flex justify-between items-center">
+    <div>
+        <div class="font-bold nama">Elisabeth Anna Andaru Putri</div>
+        <div class="text-sm text-gray-600 nomor">6288217320643</div>
+    </div>
+    <a href="https://wa.me/6288217320643" target="_blank" class="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600">
+        Chat
+    </a>
+</div>
+
+<div class="aslab-card bg-white shadow-md rounded-xl p-4 mb-4 flex justify-between items-center">
+    <div>
+        <div class="font-bold nama">Mohammad Fikri</div>
+        <div class="text-sm text-gray-600 nomor">6287761474498</div>
+    </div>
+    <a href="https://wa.me/6287761474498" target="_blank" class="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600">
+        Chat
+    </a>
+</div>
+
+<div class="aslab-card bg-white shadow-md rounded-xl p-4 mb-4 flex justify-between items-center">
+    <div>
+        <div class="font-bold nama">Khidmatul Fitria</div>
+        <div class="text-sm text-gray-600 nomor">6285852435085</div>
+    </div>
+    <a href="https://wa.me/6285852435085" target="_blank" class="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600">
+        Chat
+    </a>
+</div>
+
+<div class="aslab-card bg-white shadow-md rounded-xl p-4 mb-4 flex justify-between items-center">
+    <div>
+        <div class="font-bold nama">Hafshah Wafa Syahida</div>
+        <div class="text-sm text-gray-600 nomor">6288213282699</div>
+    </div>
+    <a href="https://wa.me/6288213282699" target="_blank" class="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600">
+        Chat
+    </a>
+</div>
+
+<div class="aslab-card bg-white shadow-md rounded-xl p-4 mb-4 flex justify-between items-center">
+    <div>
+        <div class="font-bold nama">ALVIANI ZELDA</div>
+        <div class="text-sm text-gray-600 nomor">6285895999521</div>
+    </div>
+    <a href="https://wa.me/6285895999521" target="_blank" class="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600">
+        Chat
+    </a>
+</div>
+
+<div class="aslab-card bg-white shadow-md rounded-xl p-4 mb-4 flex justify-between items-center">
+    <div>
+        <div class="font-bold nama">Rizka Mareta</div>
+        <div class="text-sm text-gray-600 nomor">6289531973260</div>
+    </div>
+    <a href="https://wa.me/6289531973260" target="_blank" class="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600">
+        Chat
+    </a>
+</div>
+
+<div class="aslab-card bg-white shadow-md rounded-xl p-4 mb-4 flex justify-between items-center">
+    <div>
+        <div class="font-bold nama">Salma Nabila My Zurrah</div>
+        <div class="text-sm text-gray-600 nomor">6285748209806</div>
+    </div>
+    <a href="https://wa.me/6285748209806" target="_blank" class="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600">
+        Chat
+    </a>
+</div>
+
+<div class="aslab-card bg-white shadow-md rounded-xl p-4 mb-4 flex justify-between items-center">
+    <div>
+        <div class="font-bold nama">Mirza Amirul Furqon</div>
+        <div class="text-sm text-gray-600 nomor">6282228421265</div>
+    </div>
+    <a href="https://wa.me/6282228421265" target="_blank" class="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600">
+        Chat
+    </a>
+</div>
+
+<div class="aslab-card bg-white shadow-md rounded-xl p-4 mb-4 flex justify-between items-center">
+    <div>
+        <div class="font-bold nama">RADITYANSYAH DWIYOGA PUTRA</div>
+        <div class="text-sm text-gray-600 nomor">6282187241918</div>
+    </div>
+    <a href="https://wa.me/6282187241918" target="_blank" class="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600">
+        Chat
+    </a>
+</div>
+
+<div class="aslab-card bg-white shadow-md rounded-xl p-4 mb-4 flex justify-between items-center">
+    <div>
+        <div class="font-bold nama">Mochammad Reyza Taufiqurakhman</div>
+        <div class="text-sm text-gray-600 nomor">6281283042476</div>
+    </div>
+    <a href="https://wa.me/6281283042476" target="_blank" class="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600">
+        Chat
+    </a>
+</div>
+
+<div class="aslab-card bg-white shadow-md rounded-xl p-4 mb-4 flex justify-between items-center">
+    <div>
+        <div class="font-bold nama">Enzellina Zuhrotul Aulia</div>
+        <div class="text-sm text-gray-600 nomor">6285736731924</div>
+    </div>
+    <a href="https://wa.me/6285736731924" target="_blank" class="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600">
+        Chat
+    </a>
+</div>
+
+<div class="aslab-card bg-white shadow-md rounded-xl p-4 mb-4 flex justify-between items-center">
+    <div>
+        <div class="font-bold nama">Awaliya Firmansyah</div>
+        <div class="text-sm text-gray-600 nomor">6285334090115</div>
+    </div>
+    <a href="https://wa.me/6285334090115" target="_blank" class="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600">
+        Chat
+    </a>
+</div>
+
+<div class="aslab-card bg-white shadow-md rounded-xl p-4 mb-4 flex justify-between items-center">
+    <div>
+        <div class="font-bold nama">Muhammad Abriel Haifa Taufiq</div>
+        <div class="text-sm text-gray-600 nomor">6281234596017</div>
+    </div>
+    <a href="https://wa.me/6281234596017" target="_blank" class="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600">
+        Chat
+    </a>
+</div>
+
+<div class="aslab-card bg-white shadow-md rounded-xl p-4 mb-4 flex justify-between items-center">
+    <div>
+        <div class="font-bold nama">Mohammad Sholeh Hasan</div>
+        <div class="text-sm text-gray-600 nomor">6281332704727</div>
+    </div>
+    <a href="https://wa.me/6281332704727" target="_blank" class="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600">
+        Chat
+    </a>
+</div>
+
+<div class="aslab-card bg-white shadow-md rounded-xl p-4 mb-4 flex justify-between items-center">
+    <div>
+        <div class="font-bold nama">DANIEL PRAWIRA KRISTIANTARA</div>
+        <div class="text-sm text-gray-600 nomor">6285175078399</div>
+    </div>
+    <a href="https://wa.me/6285175078399" target="_blank" class="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600">
+        Chat
+    </a>
+</div>
+
+<div class="aslab-card bg-white shadow-md rounded-xl p-4 mb-4 flex justify-between items-center">
+    <div>
+        <div class="font-bold nama">Fania Natasya Ramadhani</div>
+        <div class="text-sm text-gray-600 nomor">6281332836948</div>
+    </div>
+    <a href="https://wa.me/6281332836948" target="_blank" class="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600">
+        Chat
+    </a>
+</div>
+
+<div class="aslab-card bg-white shadow-md rounded-xl p-4 mb-4 flex justify-between items-center">
+    <div>
+        <div class="font-bold nama">MUHAMAD KHAIRIL HAQI</div>
+        <div class="text-sm text-gray-600 nomor">6281932716782</div>
+    </div>
+    <a href="https://wa.me/6281932716782" target="_blank" class="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600">
+        Chat
+    </a>
+</div>
+
+<div class="aslab-card bg-white shadow-md rounded-xl p-4 mb-4 flex justify-between items-center">
+    <div>
+        <div class="font-bold nama">Haniyyah Salwa Amatullah</div>
+        <div class="text-sm text-gray-600 nomor">6281362192288</div>
+    </div>
+    <a href="https://wa.me/6281362192288" target="_blank" class="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600">
+        Chat
+    </a>
+</div>
+
+<div class="aslab-card bg-white shadow-md rounded-xl p-4 mb-4 flex justify-between items-center">
+    <div>
+        <div class="font-bold nama">Argha Nuradyagustyo</div>
+        <div class="text-sm text-gray-600 nomor">6285775300505</div>
+    </div>
+    <a href="https://wa.me/6285775300505" target="_blank" class="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600">
+        Chat
+    </a>
+</div>
+
+<div class="aslab-card bg-white shadow-md rounded-xl p-4 mb-4 flex justify-between items-center">
+    <div>
+        <div class="font-bold nama">Na'ilah Hanin Rahadatul A'isyi</div>
+        <div class="text-sm text-gray-600 nomor">6285806869808</div>
+    </div>
+    <a href="https://wa.me/6285806869808" target="_blank" class="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600">
+        Chat
+    </a>
+</div>
+
+<div class="aslab-card bg-white shadow-md rounded-xl p-4 mb-4 flex justify-between items-center">
+    <div>
+        <div class="font-bold nama">Adelia Berlian Desinta Putri</div>
+        <div class="text-sm text-gray-600 nomor">6281249781314</div>
+    </div>
+    <a href="https://wa.me/6281249781314" target="_blank" class="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600">
+        Chat
+    </a>
+</div>
+
+<div class="aslab-card bg-white shadow-md rounded-xl p-4 mb-4 flex justify-between items-center">
+    <div>
+        <div class="font-bold nama">Emanuel Yoga Mahardhika</div>
+        <div class="text-sm text-gray-600 nomor">628988682847</div>
+    </div>
+    <a href="https://wa.me/628988682847" target="_blank" class="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600">
+        Chat
+    </a>
+</div>
+
+<div class="aslab-card bg-white shadow-md rounded-xl p-4 mb-4 flex justify-between items-center">
+    <div>
+        <div class="font-bold nama">Pradhipa Anggara Kusuma</div>
+        <div class="text-sm text-gray-600 nomor">6281216828536</div>
+    </div>
+    <a href="https://wa.me/6281216828536" target="_blank" class="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600">
+        Chat
+    </a>
+</div>
+
+<div class="aslab-card bg-white shadow-md rounded-xl p-4 mb-4 flex justify-between items-center">
+    <div>
+        <div class="font-bold nama">Dinda Elisya Ariyanto</div>
+        <div class="text-sm text-gray-600 nomor">6285231366364</div>
+    </div>
+    <a href="https://wa.me/6285231366364" target="_blank" class="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600">
+        Chat
+    </a>
+</div>
+
+<div class="aslab-card bg-white shadow-md rounded-xl p-4 mb-4 flex justify-between items-center">
+    <div>
+        <div class="font-bold nama">Natanael Markus Alpredo Panggabean</div>
+        <div class="text-sm text-gray-600 nomor">6281266670082</div>
+    </div>
+    <a href="https://wa.me/6281266670082" target="_blank" class="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600">
+        Chat
+    </a>
+</div>
+
+<div class="aslab-card bg-white shadow-md rounded-xl p-4 mb-4 flex justify-between items-center">
+    <div>
+        <div class="font-bold nama">PUTRI NOOR AZIZAH</div>
+        <div class="text-sm text-gray-600 nomor">6282233128510</div>
+    </div>
+    <a href="https://wa.me/6282233128510" target="_blank" class="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600">
+        Chat
+    </a>
+</div>
+
+<div class="aslab-card bg-white shadow-md rounded-xl p-4 mb-4 flex justify-between items-center">
+    <div>
+        <div class="font-bold nama">Dina Mutia Arum</div>
+        <div class="text-sm text-gray-600 nomor">6282331548778</div>
+    </div>
+    <a href="https://wa.me/6282331548778" target="_blank" class="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600">
+        Chat
+    </a>
+</div>
+
+<div class="aslab-card bg-white shadow-md rounded-xl p-4 mb-4 flex justify-between items-center">
+    <div>
+        <div class="font-bold nama">Faizal Fitrohni</div>
+        <div class="text-sm text-gray-600 nomor">6282331775443</div>
+    </div>
+    <a href="https://wa.me/6282331775443" target="_blank" class="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600">
+        Chat
+    </a>
+</div>
+
+<div class="aslab-card bg-white shadow-md rounded-xl p-4 mb-4 flex justify-between items-center">
+    <div>
+        <div class="font-bold nama">Rafly Kurniawan Susanto</div>
+        <div class="text-sm text-gray-600 nomor">6285163018212</div>
+    </div>
+    <a href="https://wa.me/6285163018212" target="_blank" class="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600">
+        Chat
+    </a>
+</div>
+
+<div class="aslab-card bg-white shadow-md rounded-xl p-4 mb-4 flex justify-between items-center">
+    <div>
+        <div class="font-bold nama">Alya Cinta Kirana Cipta</div>
+        <div class="text-sm text-gray-600 nomor">6285770130747</div>
+    </div>
+    <a href="https://wa.me/6285770130747" target="_blank" class="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600">
+        Chat
+    </a>
+</div>
+
+<div class="aslab-card bg-white shadow-md rounded-xl p-4 mb-4 flex justify-between items-center">
+    <div>
+        <div class="font-bold nama">Sephiananta Fatimatus Sya'baniyah</div>
+        <div class="text-sm text-gray-600 nomor">6285890215525</div>
+    </div>
+    <a href="https://wa.me/6285890215525" target="_blank" class="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600">
+        Chat
+    </a>
+</div>
+
+<div class="aslab-card bg-white shadow-md rounded-xl p-4 mb-4 flex justify-between items-center">
+    <div>
+        <div class="font-bold nama">Amalia Putri Nur Firdaus</div>
+        <div class="text-sm text-gray-600 nomor">6287780606098</div>
+    </div>
+    <a href="https://wa.me/6287780606098" target="_blank" class="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600">
+        Chat
+    </a>
+</div>
+
+<div class="aslab-card bg-white shadow-md rounded-xl p-4 mb-4 flex justify-between items-center">
+    <div>
+        <div class="font-bold nama">RAFLI AZIZ SAPUTRA</div>
+        <div class="text-sm text-gray-600 nomor">6285236659437</div>
+    </div>
+    <a href="https://wa.me/6285236659437" target="_blank" class="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600">
+        Chat
+    </a>
+</div>
+
+<div class="aslab-card bg-white shadow-md rounded-xl p-4 mb-4 flex justify-between items-center">
+    <div>
+        <div class="font-bold nama">Daffa Alwafi Khairani</div>
+        <div class="text-sm text-gray-600 nomor">6281374630398</div>
+    </div>
+    <a href="https://wa.me/6281374630398" target="_blank" class="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600">
+        Chat
+    </a>
+</div>
+
+<div class="aslab-card bg-white shadow-md rounded-xl p-4 mb-4 flex justify-between items-center">
+    <div>
+        <div class="font-bold nama">Dimas Alvin Apriyanto</div>
+        <div class="text-sm text-gray-600 nomor">6281238714011</div>
+    </div>
+    <a href="https://wa.me/6281238714011" target="_blank" class="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600">
+        Chat
+    </a>
+</div>
+
+<div class="aslab-card bg-white shadow-md rounded-xl p-4 mb-4 flex justify-between items-center">
+    <div>
+        <div class="font-bold nama">Salma Chaula Adilla</div>
+        <div class="text-sm text-gray-600 nomor">6281227748315</div>
+    </div>
+    <a href="https://wa.me/6281227748315" target="_blank" class="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600">
+        Chat
+    </a>
+</div>
+
+<div class="aslab-card bg-white shadow-md rounded-xl p-4 mb-4 flex justify-between items-center">
+    <div>
+        <div class="font-bold nama">Muhamad Adiva Oktavian</div>
+        <div class="text-sm text-gray-600 nomor">6285607492473</div>
+    </div>
+    <a href="https://wa.me/6285607492473" target="_blank" class="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600">
+        Chat
+    </a>
+</div>
+
+<div class="aslab-card bg-white shadow-md rounded-xl p-4 mb-4 flex justify-between items-center">
+    <div>
+        <div class="font-bold nama">Firdaus Ahnaf Hasbullah</div>
+        <div class="text-sm text-gray-600 nomor">6281229602277</div>
+    </div>
+    <a href="https://wa.me/6281229602277" target="_blank" class="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600">
+        Chat
+    </a>
+</div>
+
+<div class="aslab-card bg-white shadow-md rounded-xl p-4 mb-4 flex justify-between items-center">
+    <div>
+        <div class="font-bold nama">Azzahra Jeanine Firnanda</div>
+        <div class="text-sm text-gray-600 nomor">6283134549478</div>
+    </div>
+    <a href="https://wa.me/6283134549478" target="_blank" class="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600">
+        Chat
+    </a>
+</div>
+
+<div class="aslab-card bg-white shadow-md rounded-xl p-4 mb-4 flex justify-between items-center">
+    <div>
+        <div class="font-bold nama">Rayhan Putra Maulana Isnandar</div>
+        <div class="text-sm text-gray-600 nomor">6285157852284</div>
+    </div>
+    <a href="https://wa.me/6285157852284" target="_blank" class="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600">
+        Chat
+    </a>
+</div>
+
+<div class="aslab-card bg-white shadow-md rounded-xl p-4 mb-4 flex justify-between items-center">
+    <div>
+        <div class="font-bold nama">Putu Jhoevy Sri Gnana Utami</div>
+        <div class="text-sm text-gray-600 nomor">6281210395561</div>
+    </div>
+    <a href="https://wa.me/6281210395561" target="_blank" class="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600">
+        Chat
+    </a>
+</div>
+
+<div class="aslab-card bg-white shadow-md rounded-xl p-4 mb-4 flex justify-between items-center">
+    <div>
+        <div class="font-bold nama">Athaya Khairani Adi</div>
+        <div class="text-sm text-gray-600 nomor">6281323478709</div>
+    </div>
+    <a href="https://wa.me/6281323478709" target="_blank" class="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600">
+        Chat
+    </a>
+</div>
+
+<div class="aslab-card bg-white shadow-md rounded-xl p-4 mb-4 flex justify-between items-center">
+    <div>
+        <div class="font-bold nama">Dava Ferdiansyah</div>
+        <div class="text-sm text-gray-600 nomor">6287831564135</div>
+    </div>
+    <a href="https://wa.me/6287831564135" target="_blank" class="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600">
+        Chat
+    </a>
+</div>
+
+<div class="aslab-card bg-white shadow-md rounded-xl p-4 mb-4 flex justify-between items-center">
+    <div>
+        <div class="font-bold nama">Ganes Ramadhani Bintang Harya Mulyocahyono</div>
+        <div class="text-sm text-gray-600 nomor">62881026052106</div>
+    </div>
+    <a href="https://wa.me/62881026052106" target="_blank" class="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600">
+        Chat
+    </a>
+</div>
+
+<div class="aslab-card bg-white shadow-md rounded-xl p-4 mb-4 flex justify-between items-center">
+    <div>
+        <div class="font-bold nama">RONALD NAUFAL PUTRA SUSANTO</div>
+        <div class="text-sm text-gray-600 nomor">6281330361912</div>
+    </div>
+    <a href="https://wa.me/6281330361912" target="_blank" class="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600">
+        Chat
+    </a>
+</div>
+
+<div class="aslab-card bg-white shadow-md rounded-xl p-4 mb-4 flex justify-between items-center">
+    <div>
+        <div class="font-bold nama">Lu'bah Al 'Aini</div>
+        <div class="text-sm text-gray-600 nomor">6281932800579</div>
+    </div>
+    <a href="https://wa.me/6281932800579" target="_blank" class="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600">
+        Chat
+    </a>
+</div>
+
+<div class="aslab-card bg-white shadow-md rounded-xl p-4 mb-4 flex justify-between items-center">
+    <div>
+        <div class="font-bold nama">Widi Andriani</div>
+        <div class="text-sm text-gray-600 nomor">6281311205570</div>
+    </div>
+    <a href="https://wa.me/6281311205570" target="_blank" class="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600">
+        Chat
+    </a>
+</div>
+
+<div class="aslab-card bg-white shadow-md rounded-xl p-4 mb-4 flex justify-between items-center">
+    <div>
+        <div class="font-bold nama">Ni Wayan Sinta Maharani</div>
+        <div class="text-sm text-gray-600 nomor">6281332095312</div>
+    </div>
+    <a href="https://wa.me/6281332095312" target="_blank" class="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600">
+        Chat
+    </a>
+</div>
+
+<div class="aslab-card bg-white shadow-md rounded-xl p-4 mb-4 flex justify-between items-center">
+    <div>
+        <div class="font-bold nama">Veronika Putri Gantari</div>
+        <div class="text-sm text-gray-600 nomor">6281917721229</div>
+    </div>
+    <a href="https://wa.me/6281917721229" target="_blank" class="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600">
+        Chat
+    </a>
+</div>
+
+<div class="aslab-card bg-white shadow-md rounded-xl p-4 mb-4 flex justify-between items-center">
+    <div>
+        <div class="font-bold nama">Rifky Aji Darmawan</div>
+        <div class="text-sm text-gray-600 nomor">6281316034150</div>
+    </div>
+    <a href="https://wa.me/6281316034150" target="_blank" class="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600">
+        Chat
+    </a>
+</div>
+
+<div class="aslab-card bg-white shadow-md rounded-xl p-4 mb-4 flex justify-between items-center">
+    <div>
+        <div class="font-bold nama">Rahmatullah Akmal Mu'afa Ahmada</div>
+        <div class="text-sm text-gray-600 nomor">6281232743164</div>
+    </div>
+    <a href="https://wa.me/6281232743164" target="_blank" class="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600">
+        Chat
+    </a>
+</div>
+
+<div class="aslab-card bg-white shadow-md rounded-xl p-4 mb-4 flex justify-between items-center">
+    <div>
+        <div class="font-bold nama">Roichanah Zahroh Alhaniyah</div>
+        <div class="text-sm text-gray-600 nomor">6281246684235</div>
+    </div>
+    <a href="https://wa.me/6281246684235" target="_blank" class="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600">
+        Chat
+    </a>
+</div>
+
+<div class="aslab-card bg-white shadow-md rounded-xl p-4 mb-4 flex justify-between items-center">
+    <div>
+        <div class="font-bold nama">Livynia Khaira Anastacia Dacosta</div>
+        <div class="text-sm text-gray-600 nomor">6281450390182</div>
+    </div>
+    <a href="https://wa.me/6281450390182" target="_blank" class="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600">
+        Chat
+    </a>
+</div>
+
+<div class="aslab-card bg-white shadow-md rounded-xl p-4 mb-4 flex justify-between items-center">
+    <div>
+        <div class="font-bold nama">Ahmad Daffa Muslihi</div>
+        <div class="text-sm text-gray-600 nomor">6282259268944</div>
+    </div>
+    <a href="https://wa.me/6282259268944" target="_blank" class="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600">
+        Chat
+    </a>
+</div>
+
+<div class="aslab-card bg-white shadow-md rounded-xl p-4 mb-4 flex justify-between items-center">
+    <div>
+        <div class="font-bold nama">Nabillah Putri Nurainy</div>
+        <div class="text-sm text-gray-600 nomor">6285792710409</div>
+    </div>
+    <a href="https://wa.me/6285792710409" target="_blank" class="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600">
+        Chat
+    </a>
+</div>
+
+<script>
+          const searchInput = document.getElementById('searchInput');
+    const moduleList = document.getElementById('moduleList');
+
+    searchInput.addEventListener('keyup', function () {
+      const query = this.value.toLowerCase();
+      const buttons = moduleList.querySelectorAll('button');
+
+      buttons.forEach(btn => {
+        const text = btn.textContent.toLowerCase();
+        btn.style.display = text.includes(query) ? 'block' : 'none';
+      });
+    });
+
+        function filterAslab() {
+        const input = document.getElementById('searchInput').value.toLowerCase();
+        const aslab = document.querySelectorAll('#aslabList .aslab-card');
+        
+        aslab.forEach(card => {
+            const nama = card.querySelector('.nama').textContent.toLowerCase();
+            const nomor = card.querySelector('.nomor').textContent.toLowerCase();
+            card.style.display = (nama.includes(input) || nomor.includes(input)) ? 'flex' : 'none';
+        });
+    }
+</script>
+</body>
+</html>
